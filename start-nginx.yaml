@@ -1,6 +1,6 @@
 ---
 - name: start nginx
-  hosts: Sensu Go
+  hosts: "Sensu Go"
   remote_user: centos
   become: yes
   become_method: sudo
