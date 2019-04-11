@@ -1,6 +1,6 @@
 ---
 - name: install nginx
-  hosts: "Sensu Go"
+  hosts: all
   remote_user: centos
   become: yes
   become_method: sudo
