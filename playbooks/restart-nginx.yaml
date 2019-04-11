@@ -1,0 +1,11 @@
+---
+- name: restart nginx
+  remote_user: centos
+  become: yes
+  become_method: sudo
+  become_user: root
+  tasks:
+  - name: restart nginx
+    service:
+      name: nginx
+      state: restarted

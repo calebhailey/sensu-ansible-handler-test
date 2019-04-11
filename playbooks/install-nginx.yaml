@@ -1,0 +1,19 @@
+---
+- name: install nginx
+  remote_user: centos
+  become: yes
+  become_method: sudo
+  become_user: root
+  tasks:
+  - name: enable epel
+    yum:
+      name: epel-release
+      state: installed
+  - name: install nginx
+    yum:
+      name: nginx,curl
+      state: installed
+  - name: start nginx
+    service:
+      name: nginx
+      state: started

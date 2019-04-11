@@ -1,0 +1,6 @@
+---
+- name: restart nginx
+  remote_user: centos
+  tasks:
+  - name: restart nginx
+    command: echo "hello world"
