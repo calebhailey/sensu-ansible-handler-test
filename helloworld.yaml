@@ -1,6 +1,6 @@
 ---
 - name: restart nginx
-  hosts: dev
+  hosts: Sensu Go
   remote_user: centos
   tasks:
   - name: restart nginx
