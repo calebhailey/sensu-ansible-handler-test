@@ -1,5 +1,6 @@
 ---
 - name: start nginx
+  hosts: nginx
   remote_user: centos
   become: yes
   become_method: sudo
